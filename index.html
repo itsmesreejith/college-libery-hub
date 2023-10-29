@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Liberay</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <button class="bar">
+                <img src="/icons/bars-solid.svg" class="menu-btn"  id="menuButton" onclick="toggleSidebar()">
+            </button  >
+            
+            <div class="sidebar" id="sidebar">
+                <a href="#">Home</a>
+                <a href="#">Category</a>
+                <a href="#">Profile</a>
+                <a href="#">favourite</a>
+                <a href="#">Contact</a>
+
+                <div class="close-button" onclick="closeSidebar()">&#10005;</div>
+            </div>
+            <a href="#" style="cursor: pointer;"><img class="logo" src="./openlibrary-logo-tighter.svg" alt="logo" ></a>
+            
+            
+        </div>
+        <div class="middle">
+            <input type="text " placeholder="Search" class="search">
+            <img src="icons/magnifying-glass-solid.svg" class="search-btn">
+        </div>
+        <div class="right">
+            <a href="login.html"><button class="login" id="login-button">Log In</button></a>
+            
+            <a href="#" onclick="show()">Sign Up</a>
+        </div>
+    </div>
+    <main>
+        <h3 class="trend">New Arrivals</h3>
+        <div class="container-book" >
+            <div class="books">
+                <img src="/books/book1.jpg" class="img-book">
+            </div>
+            <div class="books">
+                <img src="/books/book2.jpg" class="img-book">               
+            </div>
+            <div class="books">
+                <img src="/books/book3.jpg" class="img-book">              
+            </div>
+            <div class="books">
+                <img src="/books/book4.jpg" class="img-book">
+            </div>
+            <button class="borrow-button">Borrow</button>
+            
+            <button class="borrow-button">Borrow</button>
+            <button class="borrow-button">Borrow</button>
+            <button class="borrow-button">Borrow</button>
+            
+        </div>
+        <h3 class="trend">Trending</h3>
+        <div class="container-book1" >
+            <div class="books">
+                <img src="/books/book5.jpg" class="img-book">
+            </div>
+            <div class="books">
+                <img src="/books/book6.jpg" class="img-book">
+            </div>
+            <div class="books">
+                <img src="/books/book7.jpg" class="img-book">
+            </div>
+            <div class="books">
+                <img src="/books/book8.jpg" class="img-book">
+            </div>
+            <button class="borrow-button">Borrow</button>
+            <button class="borrow-button">Borrow</button>
+            <button class="borrow-button">Borrow</button>
+            <button class="borrow-button">Borrow</button>
+           
+        </div>
+
+    </main>
+</body>
+<!-- menu button effects -->
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        color: white;
+    }
+
+    .sidebar a {
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+        background-color: #555;
+    }
+
+    .menu-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        var menuButton = document.getElementById("menuButton");
+
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            menuButton.style.left = "20px";
+        } else {
+            sidebar.style.width = "250px";
+            menuButton.style.left = "270px";
+        }
+    }
+
+    function closeSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        var menuButton = document.getElementById("menuButton");
+
+        sidebar.style.width = "0";
+        menuButton.style.left = "20px";
+    }
+    function show() {
+            alert("Server Under Maintenance. Try again after some time.");
+        }
+</script>
+
+</body>
+</html>

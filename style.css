@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color: #f0e5b1 !important;
+}
+.header{
+    display: flex;
+    height: 75px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bar{
+    margin-left: 30px;
+    width: 60px;
+    height: 40px;
+    border: none;
+    background: none;
+}
+.menu-btn{
+    border: none;
+    height: 45px;
+    width: 20px;
+}
+.logo{
+    margin-left: 50px;
+    height: 50px;
+    flex: 1;
+    /* max-width: 150px; */
+    width: 100%;
+    max-width: 500px;
+    min-width: 100px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.middle{
+   
+    flex: 1;
+    margin-left: 21px;
+    margin-right: 35px;
+    max-width: 500px;
+    min-width:100px ;
+    display: flex;
+    align-items: center;
+}
+
+.right{
+ 
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 50px;
+    height:50px;
+    flex: 1;
+    max-width: 150px;
+}
+.search{
+    height: 34px;
+    border-width: 1px;
+    border-color: gray;
+    width: 100%;
+
+}
+.search::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.search-btn {
+    position: relative;
+    
+    padding-left: 3px;
+    cursor: pointer;
+   
+    height: 30px;
+    width: 40px;
+    align-items: center;
+}
+.search-btn:hover{
+    opacity: 0.9;
+}
+.login{
+    
+    font-size: 13px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+  #login-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+  }
+  #login-button:hover {
+    opacity: 0.8;
+  }
+
+  /* Optional: Active State (when clicked) */
+  #login-button:active {
+    opacity: 1;
+  }
+.container-book{
+    width: 100%;
+    height: 200px;
+    padding-left: 145px;
+    display: grid;
+    grid-template-columns:100px 92px 105px 88px;
+    column-gap: 50px;
+   
+
+}
+.container-book1{
+    width: 100%;
+    height: 200px;
+    padding-left: 145px;
+    display: grid;
+    grid-template-columns:100px 96px 106px 98px;
+    column-gap: 50px;
+   
+
+}
+.img-book{
+    width: 100%;
+    height: auto;    
+}
+.trend{
+    padding-left: 140px;
+}
+/* Button Styles */
+.borrow-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0px 12px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60px;
+    height: 20px;
+    padding-top: 1px;
+    margin-left: 20px;
+}
+
+.borrow-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Additional Styles */
+.borrow-button:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+.borrow-button:active {
+    background-color: #004298; /* Button background color when clicked */
+}
